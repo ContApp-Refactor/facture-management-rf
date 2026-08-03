@@ -1,6 +1,6 @@
 services:
   facture-management-rf:
-    image: jeserna/facture-management-rf:v0.0.27
+    image: jeserna/facture-management-rf:v1.0.92
     container_name: facture-management-rf
     env_file:
       - ${SECRETS_DIR:-/opt/secrets}/common-configs.env
