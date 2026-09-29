@@ -19,6 +19,7 @@ public class SkeletonFactureMapper {
                 .totalValue(dto.getTotalValue())
                 .totalPay(dto.getTotalPay())
                 .pendingValue(dto.getPendingValue())
+                .issueDate(dto.getIssueDate())
                 .expirationDate(dto.getExpirationDate())
                 .accountingAccount(dto.getAccountingAccount())
                 .factureType(dto.getFactureType())
@@ -54,7 +55,10 @@ public class SkeletonFactureMapper {
                 .thId(entity.getThId())
                 .totalValue(entity.getTotalValue())
                 .factureType(entity.getFactureType())
+                .issueDate(entity.getIssueDate())
                 .createdAt(entity.getCreatedAt())
+                .purchaseStatus(entity.getPurchaseStatus())
+                .version(entity.getVersion())
                 .build();
     }
     
@@ -72,10 +76,13 @@ public class SkeletonFactureMapper {
                 .totalValue(entity.getTotalValue())
                 .totalPay(entity.getTotalPay())
                 .pendingValue(entity.getPendingValue())
+                .issueDate(entity.getIssueDate())
                 .expirationDate(entity.getExpirationDate())
                 .accountingAccount(entity.getAccountingAccount())
                 .factureType(entity.getFactureType())
                 .createdAt(entity.getCreatedAt())
+                .purchaseStatus(entity.getPurchaseStatus())
+                .version(entity.getVersion())
                 .build();
     }
     
